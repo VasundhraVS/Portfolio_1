@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vasundhra V S – Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--g1:#1d2671;--g2:#c33764;--ink:#fff;--gold:#ffd369;--card:rgba(255,255,255,.12);--dark:#2a2727;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--g1:#141a52;--g2:#8e2650}}
+:root[data-theme="dark"]{--g1:#141a52;--g2:#8e2650}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',system-ui,sans-serif}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{background:#1d2671 linear-gradient(135deg,var(--g1),var(--g2)) fixed;color:var(--ink);line-height:1.6}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:14px 8%;position:sticky;top:env(safe-area-inset-top,0px);background:rgba(0,0,0,.35);backdrop-filter:blur(10px);z-index:100}
+nav h2{font-size:22px}
+nav ul{display:flex;list-style:none}
+nav li{margin-left:20px}
+nav a{color:#fff;text-decoration:none;transition:.3s}
+nav a:hover{color:var(--gold)}
+.hero{display:flex;justify-content:space-between;align-items:center;gap:30px;min-height:75vh;padding:30px 8%;flex-wrap:wrap}
+.hero-text{max-width:540px}
+.hero-text h1{font-size:44px;line-height:1.2}
+.hero-text span{color:var(--gold)}
+.hero-text h2{font-size:22px;margin-top:8px;font-weight:500}
+.hero-text h3{margin-top:6px;font-weight:300}
+.hero-text p{margin:14px 0;font-weight:300}
+.btn{display:inline-block;padding:10px 24px;background:var(--gold);color:var(--dark);text-decoration:none;border-radius:30px;margin:8px 8px 0 0;transition:.3s;font-weight:600;border:none;cursor:pointer;font-size:16px}
+.btn:hover{transform:scale(1.05)}
+.hero-img img{display:block;width:340px;height:340px;max-width:100%;object-fit:cover;object-position:top;border-radius:50%;border:4px solid #fff;box-shadow:0 0 22px rgba(255,255,255,.5)}
+section{padding:36px 8%}
+.title{text-align:center;font-size:32px;margin-bottom:22px;color:var(--gold)}
+.box{background:var(--card);padding:22px;border-radius:15px;backdrop-filter:blur(8px);line-height:1.7;transition:.4s}
+.about-box{max-width:900px;margin:auto;text-align:center}
+.row{display:flex;justify-content:center;flex-wrap:wrap;gap:16px}
+.row .box{flex:1 1 260px;max-width:340px}
+.hov:hover{transform:translateY(-6px);background:var(--gold);color:#000}
+.hov:hover a{color:#000}
+.box h3{margin-bottom:6px}
+.box p{font-weight:300}
+.box .lg{font-weight:600;font-size:18px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.skills .box{text-align:center}
+.tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:10px}
+.tags span{background:rgba(255,255,255,.18);padding:4px 12px;border-radius:20px;font-size:14px}
+.hov:hover .tags span{background:rgba(0,0,0,.12)}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.project ul{margin:10px 0 14px 20px;font-weight:300}
+.project li{margin-bottom:6px}
+.stack{color:var(--gold);font-size:14px;font-weight:500}
+.project:hover{transform:scale(1.02)}
+.ach{max-width:900px;margin:auto}
+.ach ul{list-style:none;font-weight:300}
+.ach li::before{content:"✔ ";color:var(--gold)}
+.ach a,.contact-info a{color:var(--gold);text-decoration:none}
+.ach a:hover,.contact-info a:hover{text-decoration:underline}
+.contact{max-width:760px;margin:auto;text-align:center}
+.contact-info{margin-bottom:22px}
+.contact-info p{margin:8px 0}
+.contact-form{text-align:center}
+.contact-form input,.contact-form textarea{width:100%;padding:14px;margin:8px 0;border:none;border-radius:10px;font-size:16px;font-family:inherit}
+.contact-form textarea{resize:vertical}
+#note{margin-top:10px;color:var(--gold);min-height:24px}
+footer{text-align:center;padding:16px;background:rgba(0,0,0,.35);margin-top:20px}
+@media(max-width:768px){nav{flex-direction:column;gap:8px}nav ul{flex-wrap:wrap;justify-content:center}nav li{margin:0 10px}
+.hero{text-align:center;justify-content:center;min-height:auto}.hero-text h1{font-size:34px}.hero-img{order:-1}.hero-img img{width:230px;height:230px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<nav>
+<h2>My Portfolio</h2>
+<ul>
+<li><a href="#about">About</a></li><li><a href="#education">Education</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#achievements">Achievements</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<div class="hero-text">
+<h1>Hi, I'm <span>Vasundhra V S</span></h1>
+<h2>Aspiring Full Stack Developer</h2>
+<h3>BCA Student · Kamaraj College</h3>
+<p>I build responsive, user-friendly web apps, from an AI energy-saving assistant to a real-time queue system that shortens waiting times.</p>
+<a href="#projects" class="btn">View Projects</a><a href="#contact" class="btn">Contact Me</a>
+</div>
+<div class="hero-img"><img src="photo.jpg" alt="Portrait of Vasundhra V S"></div>
+</div>
+
+<section id="about">
+<h2 class="title">About Me</h2>
+<div class="box about-box">
+<p>I am a motivated BCA student and aspiring Full Stack Developer with hands-on experience in web development, JavaScript, TypeScript, Python, SQL and data analytics. Through academic and internship projects, including an AI-powered energy monitoring app and a real-time queue management system, I have learned to build responsive, user-friendly applications. I have a strong foundation in problem solving, data structures and algorithms, and object-oriented programming, and I love learning new technologies to build efficient, scalable solutions.</p>
+</div>
+</section>
+
+<section id="education">
+<h2 class="title">Education</h2>
+<div class="row">
+<div class="box hov"><h3>Bachelor's Degree (BCA)</h3><p><b>College:</b> Kamaraj College, Thoothukudi</p><p><b>Year:</b> 2027</p><p><b>CGPA:</b> 8.5</p></div>
+<div class="box hov"><h3>Higher Secondary (HSC)</h3><p><b>School:</b> Mother Theresa Matric Hr Sec School</p><p><b>Year:</b> 2024</p><p><b>Percentage:</b> 70%</p></div>
+<div class="box hov"><h3>SSLC</h3><p><b>School:</b> Mother Theresa Matric Hr Sec School</p><p><b>Year:</b> 2022</p><p><b>Percentage:</b> 73%</p></div>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="title">Skills</h2>
+<div class="skills">
+<div class="box hov"><h3>Programming Languages</h3><div class="tags"><span>Python</span><span>Java</span><span>C++</span><span>TypeScript</span></div></div>
+<div class="box hov"><h3>Web Development</h3><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React.js</span><span>Bootstrap</span><span>Node.js</span><span>REST API</span><span>Responsive Design</span></div></div>
+<div class="box hov"><h3>Databases</h3><div class="tags"><span>MySQL</span><span>MongoDB</span><span>DBMS</span></div></div>
+<div class="box hov"><h3>Core Concepts</h3><div class="tags"><span>Data Structures &amp; Algorithms</span><span>OOP</span><span>Problem Solving</span></div></div>
+<div class="box hov"><h3>Tools &amp; Technologies</h3><div class="tags"><span>Git &amp; GitHub</span><span>VS Code</span><span>MySQL Workbench</span><span>Vercel</span></div></div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="title">Projects</h2>
+<div class="projects">
+<div class="box project">
+<h3>Spark Saver AI</h3><div class="stack">HTML · CSS · JavaScript</div>
+<ul>
+<li>AI-powered web app for energy consumption monitoring, data analysis and energy optimization.</li>
+<li>Uses energy analytics and predictive analysis to spot usage patterns and suggest smart ways to save electricity.</li>
+</ul>
+<a href="https://github.com/VasundhraVS" target="_blank" rel="noopener" class="btn">GitHub</a><a href="https://github.com/VasundhraVS" target="_blank" rel="noopener" class="btn">Live</a>
+</div>
+<div class="box project">
+<h3>Smart Queue Monitoring System</h3><div class="stack">HTML5 · CSS3 · JavaScript · TypeScript</div>
+<ul>
+<li>Real-time queue management app that cuts customer waiting time with digital token generation and live tracking.</li>
+<li>Responsive, interactive UI that works across desktop, tablet and mobile devices.</li>
+</ul>
+<a href="https://github.com/VasundhraVS" target="_blank" rel="noopener" class="btn">GitHub</a><a href="https://github.com/VasundhraVS" target="_blank" rel="noopener" class="btn">Live</a>
+</div>
+</div>
+</section>
+
+<section id="achievements">
+<h2 class="title">Achievements</h2>
+<div class="row ach">
+<div class="box" style="max-width:none">
+<h3>🏆 Certifications</h3>
+<ul>
+<li>Implement a Data Warehouse in Microsoft Fabric – Microsoft</li>
+<li>AI &amp; Sustainability Certificate – 1M1B</li>
+<li>Interview Skills – TCS iON</li>
+<li>Create and Manage Canvas Apps with Power Apps – Microsoft</li>
+</ul>
+<br>
+<h3>🎓 Internship &amp; Workshops</h3>
+<ul>
+<li>Completed the IBM SkillsBuild "AI for Sustainability" virtual internship with AICTE and 1M1B</li>
+<li>Attended sessions on Prompt Engineering and Responsible AI</li>
+</ul>
+<br>
+<h3>💻 Coding Profiles</h3>
+<ul>
+<li>GitHub: <a href="https://github.com/VasundhraVS" target="_blank" rel="noopener">View Projects</a></li>
+<li>HackerRank: <a href="https://www.hackerrank.com/profile/VasundhraVS" target="_blank" rel="noopener">View Profile</a></li>
+<li>LeetCode: <a href="https://leetcode.com/u/vasundhra3101/" target="_blank" rel="noopener">Solve Problems</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="title">Contact Me</h2>
+<div class="contact">
+<div class="box contact-info">
+<p><strong>Email:</strong> <a href="mailto:vasuvs3101@gmail.com">vasuvs3101@gmail.com</a></p>
+<p><strong>Phone:</strong> <a href="tel:+919994138737">+91 99941 38737</a></p>
+<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vasundhra-v-s" target="_blank" rel="noopener">View LinkedIn Profile</a></p>
+</div>
+<div class="box contact-form">
+<form id="f">
+<input type="text" id="n" placeholder="Enter your name" required>
+<input type="email" id="e" placeholder="Enter your email" required>
+<input type="tel" id="p" placeholder="Enter your phone number">
+<input type="text" id="s" placeholder="Enter subject" required>
+<textarea id="m" rows="6" placeholder="Enter your message" required></textarea>
+<button type="submit" class="btn">Send Message</button>
+<div id="note" role="status"></div>
+</form>
+</div>
+</div>
+</section>
+
+<footer>“Learning never stops. Every day is a new opportunity.” 🚀</footer>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var v=function(i){return document.getElementById(i).value.trim()};
+  var body='Name: '+v('n')+'\nEmail: '+v('e')+'\nPhone: '+v('p')+'\n\n'+v('m');
+  var url='mailto:vasuvs3101@gmail.com?subject='+encodeURIComponent(v('s'))+'&body='+encodeURIComponent(body);
+  document.getElementById('note').textContent='Opening your email app to send this message…';
+  window.location.href=url;
+});
+</script>
+</body>
+</html>
